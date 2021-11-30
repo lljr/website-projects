@@ -1,0 +1,153 @@
+/* TODO I think the header needs work */
+
+:root {
+    --header-height: 13vh;
+}
+
+html {
+    box-sizing: border-box;
+    scroll-padding-top: var(--header-height); /* caniuse is at 88%*/
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    color: seashell;
+    background-color: black;
+    font: .9em/1.2 Arial, Helvetica, sans-serif;
+    opacity: 0.9;
+}
+
+a {
+    color: seashell;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+/* TOP SECTION (LOGO/NAVIGATION) */
+.menu {
+    width: 100%;
+    border-bottom: 1px solid seashell;
+    height: var(--header-height);
+    background: black;
+
+    display: flex;
+    justify-content: space-between;
+
+    position: fixed;
+    z-index: 7;
+    top: 0;
+    left: 0;
+}
+
+.menu nav {
+    margin-left: auto;
+}
+
+.logo {
+    max-width: 14%;
+    display: flex;
+}
+
+.logo img {
+    margin: auto 0;
+    align-items: center;
+}
+
+.menu__links li {
+    display: inline-block;
+    padding: 10px;
+}
+
+.menu__links a {
+    border-bottom: 2px solid seashell;
+}
+
+/* MAIN STYLING (CONTENT) */
+main {
+    /* The calculation is based from the logo's height */
+    /* and the padding added to the top of the <header> */
+    padding: calc(7vh + 20px)  0;
+    max-width: 1200px;
+    margin: -4rem auto;
+}
+
+main > div {
+    margin: 4rem auto;
+}
+
+#banner {
+    background-image: url("../images/img-mission-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 14rem 0;
+}
+
+.mission {
+    background: black;
+    text-align: center;
+    padding: .7rem 0;
+}
+
+/* PRODUCTS SECTION */
+.products {
+    text-align: center;
+}
+
+.products__gallery {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    margin: -5px;
+}
+
+.products__gallery section {
+    max-width: 300px;
+    margin: 5px;
+}
+
+/* LOCATIONS SECTION */
+.location-container {
+    background-image: url("../images/img-locations-background.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    text-align: center;
+    padding: 6rem 0;
+}
+
+.location-specific {
+    display: flex;
+    flex-flow: row wrap;
+    margin: -15px;
+    justify-content: center;
+}
+
+.downtown {
+    background-color: black;
+    padding: 1rem;
+    flex: 0 1 300px;
+    margin: 15px;
+}
+/* FOOTER */
+footer {
+    text-align: center;
+}
+
+footer a[href^=mailto]::before {
+    content: "📧 ";
+}
+
+.copyright {
+    text-align: left;
+    padding-left: 1rem;
+}

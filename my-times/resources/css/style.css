@@ -1,0 +1,89 @@
+/* styling for navigation bar */
+header {
+	display: flex;
+	font-family: Verdana;
+	font-size: 14px;
+	font-weight: bold;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid black;
+	padding-bottom: 10px;
+	width: 100%;
+	position: fixed;
+	z-index: 1;
+}
+
+nav {
+	display: inline-block;
+	color: black;
+	margin-right: 15px;
+}
+
+span.menu  a {
+	color: black;
+	padding: 10px
+}
+
+.logo {
+	display: flex;
+	color: MediumAquamarine;
+	padding-left: 30px;
+	padding-right: 300px;
+	border: 1px solid black;
+	flex-grow: 1;
+}
+
+.logo .title-logo {
+	align-self: center;
+	margin-left: 15px;
+}
+
+/* styling for content */
+
+.content { 
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	border: 1px solid black;
+	margin: 0 auto;
+	padding-top: 116px;
+	overflow: scroll;
+}
+
+h2 {
+	font-weight: bold;
+}
+
+span.img-mother {
+	border: 1px solid black;
+}
+span.img-spring {
+	border: 1px solid black;
+}
+span.img-hipser {
+	border: 1px solid black;
+}
+
+.article {
+	border: 2px solid black;
+}
+.content .large {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	border: 1px solid black;
+	width: 630px;
+}
+
+.content .medium {
+	display: flex;
+	border: 1px solid black;
+	width: 300px;
+}
+
+.content .small {
+	display: flex;
+	border: 1px solid black;
+	width: 240px;
+}

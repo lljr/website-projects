@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title>Tea Cozy</title>
+    <link href="resources/css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <!-- TODO Add transitions to anchored elements -->
+    <!-- TODO Fix  main <header> vh by removing it from the logo picture -->
+    <header class="menu">
+      <div class="logo"><a href="#"><img src="./resources/images/img-tea-cozy-logo.png" alt="logo image"></a></div>
+	    <nav>
+	      <ul class="menu__links">
+            <!-- https://stackoverflow.com/a/13117744 -->
+	        <li><a href="#mission">Mission</a></li>
+	        <li><a href="#featured">Featured Tea</a></li>
+	        <li><a href="#locations">Locations</a></li>
+	      </ul>
+	    </nav>
+    </header>
+
+    <main>
+      <div id="banner">
+	    <section class="mission">
+	      <h1 id="mission">Our Mission</h1>
+	      <p>Handpicked, Artisanally Curated, Free Range, Sustainable, Small Batch, Fair Trade, OrganicTea</p>
+	    </section>
+      </div>
+
+      <div class="products">
+	    <header class="products__header">
+          <!-- https://stackoverflow.com/a/13117744 -->
+	      <h2 id="featured" class="anchor">Tea of the Month</h2>
+	      <p>What's Steeping at The Tea Cozy?</p>
+	    </header>
+	    <div class="products__gallery">
+	      <section>
+	        <img src="./resources/images/img-berryblitz.jpg" alt="blitz tea image">
+	        <h3>Fall Berry Blitz Tea</h3>
+	      </section>
+	      <section>
+	        <img src="./resources/images/img-spiced-rum.jpg" alt="spiced rum tea image">
+	        <h3>Spiced Rum Tea</h3>
+	      </section>
+	      <section>
+	        <img src="./resources/images/img-donut.jpg" alt="seasonal donuts image">
+	        <h3>Seasonal Donuts</h3>
+	      </section>
+	      <section>
+	        <img src="./resources/images/img-myrtle-ave.jpg" alt="myrtle ave tea image">
+	        <h3>Myrtle Avenue Tea</h3>
+	      </section>
+	      <section>
+	        <img src="./resources/images/img-bedford-bizarre.jpg" alt="bedford bizarre tea image">
+	        <h3>Bedford Bizarre Tea</h3>
+	      </section>
+	    </div>
+      </div>
+
+      <div id="locations" class="location-container">
+	    <h2>Locations</h2>
+	      <div class="location-specific">
+	        <section class="downtown">
+		      <h3>Downtown</h3>
+              <address>
+                <p>384 West 4th St</p>
+		        <p>Suite 108</p>
+		        <p>Portland, Maine</p>
+              </address>
+	        </section>
+	        <section class="downtown">
+		      <h3>East Bayside</h3>
+              <address>
+		        <p>3433 Phisherman's Avenue</p>
+		        <p>(Northwest Corner)</p>
+		        <p>Portland, Maine</p>
+              </address>
+
+	        </section>
+	        <section class="downtown">
+		      <h3>Oakdale</h3>
+              <address>
+                <p>515 Crescent Avenue</p>
+		        <p>Second Floor</p>
+		        <p>Portland, Maine</p>
+              </address>
+	        </section>
+	      </div>
+      </div>
+    </main>
+
+    <footer>
+      <h2>Tea Cozy</h2>
+      <address>
+	    <a href="mailto:contact@theteacozy.com">contact@theteacozy.com</a><br>
+	    <p>917-555-8904</p>
+      </address>
+      <p class="copyright">&copy; The Tea Cozy</p>
+    </footer>
+    <script src="./resources/js/index.js"></script>
+  </body>
+</html>

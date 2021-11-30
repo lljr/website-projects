@@ -1,0 +1,8 @@
+* Getting started
+
+open up =index.html=
+
+* Description
+A website that showcases a Tea shop. First written for Codecademy.com
+but since has been refactored to use new technologies like: CSS
+Flexbox and CSS Animations (transitions).
